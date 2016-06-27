@@ -14,13 +14,13 @@ public class MyParking
         //Create the parking lot
         ParkingLot myLot=new ParkingLot(NO_OF_SLOTS,SMALL_SLOTS,NORMAL_SLOTS,HANDICAPPED_SLOTS);
 
-        Vehicle bike=new Vehicle(1,SIZE.Small);
+        Vehicle bike=new Bike(1);
         myLot.park(bike);
 
-        Vehicle car=new Vehicle(2,SIZE.Normal);
+        Vehicle car=new Car(2);
         myLot.park(car);
 
-        Vehicle handicapped_vehicle=new Vehicle(3,"Handicapped");
+        Vehicle handicapped_vehicle=new HandicappedVehicle(3);
         myLot.park(handicapped_vehicle);
 
         myLot.unpark(car);

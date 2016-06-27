@@ -2,7 +2,7 @@
  * Created by jonathan on 6/9/2016.
  */
 
-public class Vehicle {
+public abstract class Vehicle {
 
     private int vehicle_id;
     private SIZE vehicle_size;
@@ -10,6 +10,10 @@ public class Vehicle {
     private boolean handicapped;
     private int slotID=0;
 
+    Vehicle()
+    {
+
+    }
     Vehicle(int id, SIZE size) {
         vehicle_id = id;
         vehicle_size = size;
